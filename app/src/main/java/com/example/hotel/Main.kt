@@ -12,8 +12,8 @@ fun main() {
     println("메뉴")
     println("1. 방 예약, 2. 예약목록 출력, 3. 예약목록 (정렬) 출력, 4. 시스템 종료, 5. 금액 입급.출금 내역 목록 출력, 6. 예약 변경/취소")
     var number = readLine()!!.toInt()
-    var now = LocalDate.now()
-    val dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd")
+    var now = LocalDate.now() // 현재 날짜
+    val dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd") //날짜를 원하는 형식으로 문자열로 변환
 
     when(number) {
         1 -> {
