@@ -17,6 +17,7 @@ fun main() {
 
     when(number) {
         1 -> {
+            val randomResvMoney = (10000..50000).random()
             println("예약자 분의 성함을 입력해주세요.")
             var name = readLine()!!.toString()
 
@@ -63,6 +64,17 @@ fun main() {
 
                     }
                 }
+
+//            if (people.money.outBalance(randomResvMoney, "reserve")) {
+//                ResvHistory(
+//                    people = people,
+//                    checkIn = checkIn!!,
+//                    checkOut = checkOut!!,
+//                    reserveRoom = roomNum,
+//                    resvMoney = randomResvMoney
+//                ).run {
+//                    resvHistory.add(this)
+//                }
                     println("호텔 예약이 완료되었습니다.")
 
 
